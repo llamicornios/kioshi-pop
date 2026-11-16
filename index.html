@@ -111,7 +111,9 @@ main section[id]{scroll-margin-top:86px}
 .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.2rem;font-family:var(--body);font-weight:600;text-transform:uppercase;font-size:.76rem;letter-spacing:.08em;border:3px solid var(--ink);box-shadow:var(--hard-sm);transition:transform .15s ease,box-shadow .15s ease;min-height:44px}
 .btn-solid{background:var(--red);color:#fff}
 .btn-ghost{background:var(--paper);color:var(--ink)}
-.btn:hover{transform:translate(-2px,-2px);box-shadow:var(--hard)}
+@media(hover:hover) and (pointer:fine){
+  .btn:hover{transform:translate(-2px,-2px);box-shadow:var(--hard)}
+}
 .btn:active{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
 
 /* BANDAS */
@@ -128,7 +130,9 @@ main section[id]{scroll-margin-top:86px}
 
 /* TILES */
 a.tile{display:flex;flex-direction:column;background:var(--cream);border:3px solid var(--ink);box-shadow:var(--hard);overflow:hidden;transition:transform .15s ease,box-shadow .15s ease}
-a.tile:hover{transform:translate(-3px,-3px);box-shadow:12px 12px 0 var(--ink)}
+@media(hover:hover) and (pointer:fine){
+  a.tile:hover{transform:translate(-3px,-3px);box-shadow:12px 12px 0 var(--ink)}
+}
 a.tile img{object-fit:cover;border-bottom:3px solid var(--ink);width:100%}
 .tile-body{padding:1.1rem 1.15rem 1.35rem;display:flex;flex-direction:column;gap:.4rem;flex:1}
 .tile h3{margin:0}
